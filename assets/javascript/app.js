@@ -52,6 +52,7 @@ function updateTime() {
         $("#timeRemain").text(timeRemaining);
     }
     else {
+        if (correctAns == 0) wrongAns = 5;
         showResults();
     }
 }
@@ -59,7 +60,7 @@ function updateTime() {
 function generateQuestions() {
     $("#quizId").empty();
     for (var i = 0; i < movieQuestions.length; i++) {
-        var title = $("<p>").text(i + 1 + ".  " + movieQuestions[i].question);
+        var title = $("<p style='font-weight:bold;'>").text(i + 1 + ".  " + movieQuestions[i].question);
         $("#quizId").append(title);
 
         for (var j = 0; j < movieQuestions[i].possibleAns.length; j++) {
@@ -76,7 +77,7 @@ function showResults() {
 
     $('.container').hide();
     if (timeRemaining < 0) {
-        $('#finalMessage').text("You are running out of time");
+        $('#finalMessage').text("You ran out of time");
     }
     else {
         $('#finalMessage').text("Final results")
@@ -113,6 +114,20 @@ $(document).ready(function () {
 
         // show results page
         showResults();
+    });
+
+    $("#cancel").click(function () {
+        $('.results').hide();
+    });
+
+    $("#restart").click(function () {
+        $('.results').hide();
+        timeRemaining = 30;
+        correctAns = 0;
+        wrongAns = 0;
+        generateQuestions();
+        $('.container').show();
+        timer = setInterval(updateTime, 1000);
     });
 
 });

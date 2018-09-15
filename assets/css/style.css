@@ -13,7 +13,7 @@ button {
 
 .jumbotron {
   background: url("../images/movie-curtain-images.jpg");
-  color: snow;
+  color: wheat;
   padding-top: 10px;
   padding-bottom:10px;
   width: 100%;
@@ -22,18 +22,41 @@ button {
 
 body {
   background: url("../images/hollywood-movie.jpg");
-  background-size: cover; 
+  background-size: cover;
   font-family: 'Raleway', sans-serif;
 	font-size: 25px;
-  width: 1000px;
+  width: 1200px;
   height: 900px;
 } 
 
+.container {
+  background-color: #0f8b94 !important;
+  color: #290200 !important;
+  opacity: .80;
+}
 
-.card{
+.score-board {
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+  background: lightseagreen;
+  width:33%;
+}
+
+.results {
+  text-align: center;
+  background-color: #0f8b94 !important;
+  opacity: .80;
+}
+
+#done {
+  margin: auto;
+}
+
+/* .card{
   margin:20px;
   height: 95% !important;
   width: 95% !important;
-}
+} */
 
 

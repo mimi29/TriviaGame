@@ -16,7 +16,7 @@
 <body>
     <div class="alert-warning">
         <div class="jumbotron text-center">
-            <h1>Movies Quiz</h1>
+            <h1>&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;Movies Quiz&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;</h1>
         </div>
     </div>
 
@@ -32,7 +32,7 @@
                     </button>
                 </div>
                 <div class="modal-body ">
-                    You are given 5 questions about the movies and 30 seconds to complete it.
+                    You are given 5 questions about movies and 30 seconds to complete it.
                     Click start when you are ready.
                 </div>
                 <div class="modal-footer">
@@ -44,17 +44,18 @@
 
     <div class="container">
         <div class="card-title text-center">
-            Time Remain: <span id="timeRemain">30</span> seconds
+            Time Remaining: <span id="timeRemain">30</span> seconds
         </div>
         <div id="quizId"></div>
 
         <button class="ui-button ui-widget ui-corner-all" id="done">Submit</button>
     </div>
-    <div class="results">
-        <div id="finalMessage"></div>
+    <div class="results score-board">
+        <h2 id="finalMessage"></h2>
         <div id="correctAnswers"></div>
         <div id="inCorrectAnswers"></div>
         <button class="ui-button ui-widget ui-corner-all" id="restart">Restart</button>
+        <button class="ui-button ui-widget ui-corner-all" id="cancel">Cancel</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
