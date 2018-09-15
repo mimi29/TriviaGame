@@ -1,4 +1,6 @@
-
+html, body {
+  margin: 0 auto
+}
 
 p {
   line-height: 30px;
@@ -25,18 +27,17 @@ body {
   background-size: cover;
   font-family: 'Raleway', sans-serif;
 	font-size: 25px;
-  width: 1200px;
-  height: 900px;
 } 
 
 .container {
   background-color: #0f8b94 !important;
   color: #290200 !important;
+  max-width: 90% !important;
   opacity: .80;
 }
 
 .score-board {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   border-radius: 20px;
   background: lightseagreen;
@@ -50,7 +51,7 @@ body {
 }
 
 #done {
-  margin: auto;
+  margin: 0 auto;
 }
 
 
